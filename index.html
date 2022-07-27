@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Box By JS</title>
+</head>
+<body>
+    <h1>Select BOx By JAvaScript</h1>
+    <p>NOw we will gonna to make a dynamic select box that will get data of its option from an array.</p>
+    <form action="" id="form"></form>
+    
+    <script>
+        let form = document.getElementById("form");
+        let select = document.createElement("select");
+        form.append(select);
+        var abc = ["Web Development", "App Development", "Graphic Designing", "SEO"];
+        let option;
+        for(i = 0; i < abc.length; i++) {
+           option = document.createElement("option");
+           option.innerText = abc[i];
+           select.append(option);
+        }
+    </script>
+</body>
+</html>
